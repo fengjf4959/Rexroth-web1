@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文学类书籍 - 冯俊峰的读书会</title>
+    <style>
+        /* 复用首页的基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .back-home {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background-color: #3498db;
+            border-radius: 5px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .category-title {
+            color: #2c3e50;
+            margin: 20px 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .books-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .book-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .book-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .book-item h3 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        .book-item p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .book-item a {
+            display: inline-block;
+            color: white;
+            background-color: #2980b9;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>冯俊峰的读书会</h1>
+            <a href="index.html" class="back-home">返回首页</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="category-title">文学类书籍推荐</h2>
+        
+        <div class="books-list">
+            <div class="book-item">
+                <h3>百年孤独</h3>
+                <p>作者：加西亚·马尔克斯</p>
+                <p>推荐理由：魔幻现实主义的巅峰之作</p>
+                <a href="book1.html">查看详细解读</a>
+            </div>
+
+            <div class="book-item">
+                <h3>平凡的世界</h3>
+                <p>作者：路遥</p>
+                <p>推荐理由：记录中国普通人的奋斗历程</p>
+                <a href="book2.html">查看详细解读</a>
+            </div>
+
+            <div class="book-item">
+                <h3>活着</h3>
+                <p>作者：余华</p>
+                <p>推荐理由：直面生命的本质与意义</p>
+                <a href="book3.html">查看详细解读</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 冯俊峰的读书会 | 所有阅读心得均为个人观点</p>
+    </footer>
+</body>
+</html>
